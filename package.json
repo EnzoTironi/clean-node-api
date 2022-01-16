@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:staged": "jest",
+    "prepare": "husky install"
   },
   "standard": {
     "env": [
@@ -14,6 +16,7 @@
   "lint-staged": {
     "*.js": [
       "standard --fix",
+      "npm run test:staged",
       "git add"
     ]
   },
@@ -26,7 +29,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^27.4.0",
-    "husky": "^7.0.4",
+    "husky": "^7.0.0",
     "jest": "^27.4.7",
     "lint-staged": "^12.1.7",
     "standard": "^16.0.4",
