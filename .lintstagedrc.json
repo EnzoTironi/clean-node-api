@@ -1,0 +1,9 @@
+{
+  "lint-staged": {
+    "*.js": [
+      "standard --fix",
+      "npm run teste",
+      "git add"
+    ]
+  }
+}
