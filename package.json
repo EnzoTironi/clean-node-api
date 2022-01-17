@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --colors --passWithNoTests --silent",
-    "teste:unit": "npm test -- jest --watch ",
-    "teste:staged": "npm test -- --findRelatedTests",
+    "test:unit": "npm test -- --watch",
+    "test:staged": "npm test -- --findRelatedTests",
     "test:ci": "npm test -- --coverage ",
     "prepare": "husky install"
   },
